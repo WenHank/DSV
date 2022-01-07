@@ -1,0 +1,81 @@
+@import '../modules/variables';
+@import '../modules/functions';
+@import '../modules/inputStyle';
+
+body {
+    @include background();
+}
+.container{
+    @include flexCenter(column);
+}
+.title{
+    color: #fff;
+    font-family: "Trebuchet MS";
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 1400px;
+    display: flex;
+}
+.Input{
+    color: #fff;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Onput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.searchExamsubmit{
+    margin-top: 20px;
+}
+.select{
+    margin-left: 10px;
+    margin-right: 3px;
+}
+.ansText{
+    height: 30px;
+}
+.arrayInput,.linkInput{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+.arrayText{
+    margin: 5px;
+    font-size: 15px;
+}
+.arrayQ{
+    width:400px;
+    border: white 3px solid;
+    display: flex;
+    justify-content: space-between;
+}
+.arrayContainer{
+    width:394px;
+    display: flex;
+    justify-content: space-between;
+}
+.linkText{
+    margin: 5px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+.linkQ{
+    width:500px;
+    display: flex;
+    justify-content: space-between;
+}
+.linkContainer{
+    width:550px;
+    display: flex;
+    justify-content: space-around;
+}
+.options{
+    margin-bottom: 30px;
+}

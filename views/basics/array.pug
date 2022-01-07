@@ -1,0 +1,25 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/basics/array.css' rel='stylesheet')
+
+block container
+    section#intro
+        .container
+            .row
+                .col-md-12
+                    div.circular
+                    i.fas.fa-info-circle.tips
+                    canvas#canvas.array.col-md-12(width="1000" height= "400")
+                    div.methods
+                        div.insert.method
+                            span Insert
+                            input.input.insertIndex(type="text" placeholder='index')
+                            input.input.insertValue(type="text" placeholder='value' maxlength="4")
+                            button.btn.btn-success.insertGo(type='button') Go
+                        div.delete.method
+                            span Delete
+                            input.input.deleteIndex(type="text" placeholder='index')
+                            button.btn.btn-success.deleteGo(type='button') Go
+
+block javascript 
+    script(src='/js/basics/array.js')

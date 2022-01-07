@@ -1,0 +1,36 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/basics/linkedList.css' rel='stylesheet')
+
+block container
+    section#intro
+        .container
+            .row
+                .col-md-12
+                    div.circular
+                    i.fas.fa-info-circle.tips
+                    canvas#canvas.linkList.col-md-12(width="1000" height= "400")
+                    div.methods
+                        div.method
+                            div
+                                span append
+                                input.input.appendValue(type="text" placeholder='value' maxlength="4")
+                                button.btn.btn-success.appendGo(type='button') Go
+                            div    
+                                span Insert
+                                input.input.insertIndex(type="text" placeholder='index')
+                                input.input.insertValue(type="text" placeholder='value' maxlength="4")
+                                button.btn.btn-success.insertGo(type='button') Go
+                        div.method
+                            div
+                                span Delete
+                                input.input.deleteIndex(type="text" placeholder='index')
+                                button.btn.btn-success.deleteGo(type='button') Go
+                            div
+                                span Search
+                                input.input.searchValue(type="text" placeholder='value')
+                                button.btn.btn-success.searchGo(type='button') Go
+
+
+block javascript 
+    script(src='/js/basics/linkedList.js')

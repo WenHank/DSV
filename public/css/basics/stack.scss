@@ -1,0 +1,8 @@
+@import '../modules/variables';
+@import '../modules/functions';
+@import '../modules/inputStyle';
+@import '../modules/info';
+
+body {
+    @include background();
+}

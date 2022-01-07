@@ -1,0 +1,57 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/logSystem/signUp.css' rel='stylesheet')
+
+block container
+    .container
+        .wrapper 
+            header  SignUp
+            form(action="signUp" method="post")
+                if message === "5" 
+                    div.field.name.shake.error
+                        div.input-area 
+                            input.input.nInput(type="text" placeholder="name" maxlength="10" name="name"  required)
+                            i.icon.fas.fa-user
+                            i.error.error-icon.fas.fa-exclamation-circle
+                        div.error.error-txt User with the provided name already exists!
+                    div.field.email.shake.error
+                        div.input-area 
+                            input.input.pInput(type="text" placeholder="email" maxlength="10" name="email" required)
+                            i.icon.fas.fa-envelope
+                            i.error.error-icon.fas.fa-exclamation-circle
+                        div.error.error-txt User with the provided email already exists!
+                    div.field.password.shake.error
+                        div.input-area 
+                            input.input.pInput(type="text" placeholder="password" maxlength="10" name="password" required)
+                            i.icon.fas.fa-lock
+                            i.error.error-icon.fas.fa-exclamation-circle
+                        div.error.error-txt User with the provided password already exists!
+                else 
+                    div.field.name
+                        div.input-area 
+                            input.input.nInput(type="text" placeholder="name" maxlength="10" name="name"  required)
+                            i.icon.fas.fa-user
+                            i.error.error-icon.fas.fa-exclamation-circle
+                        div.error.error-txt Name can't be blank!
+                    div.field.email
+                        div.input-area 
+                            input.input.eInput(type="text" placeholder="email" maxlength="10" name="email" required)
+                            i.icon.fas.fa-envelope
+                            i.error.error-icon.fas.fa-exclamation-circle
+                        div.error.error-txt Name can't be blank!
+                    div.field.password
+                        div.input-area 
+                            input.input.pInput(type="text" placeholder="password" maxlength="10" name="password" required)
+                            i.icon.fas.fa-lock
+                            i.error.error-icon.fas.fa-exclamation-circle
+                        div.error.error-txt Name can't be blank!
+                input.input.submit(type="submit")
+
+
+
+
+
+
+
+
+

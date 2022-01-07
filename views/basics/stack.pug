@@ -1,0 +1,23 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/basics/stack.css' rel='stylesheet')
+
+block container
+    section#intro
+        .container
+            .row
+                .col-md-12
+                    div.circular
+                    i.fas.fa-info-circle.tips
+                    canvas#canvas.stack.col-md-12(width="1000" height= "500")
+                    div.methods
+                        div.insert.method
+                            span Push
+                            input.input.pushValue(type="text" placeholder='value' maxlength="4")
+                            button.btn.btn-success.pushGo(type='button') Go
+                        div.delete.method
+                            span Pop
+                            button.btn.btn-success.popGo(type='button') Go
+
+block javascript 
+    script(src='/js/basics/stack.js')

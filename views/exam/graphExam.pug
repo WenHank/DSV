@@ -1,0 +1,107 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/exam/graphExam.css' rel='stylesheet')
+
+
+block container
+    .container
+        form(action="graphExam" method="post") 
+            span.title graphExam
+            div.methods
+                div.Input
+                    span 1.
+                    div.options
+                        input.ansText(type="text" name="question1" required )
+                    span 2.
+                    div.options
+                        span A
+                        input.select(type="radio" name="question2" value="A" required )
+                        span B
+                        input.select(type="radio" name="question2" value="B" required )
+                        span C
+                        input.select(type="radio" name="question2" value="C" required )
+                        span D
+                        input.select(type="radio" name="question2" value="D" required )
+                    span 3.
+                    div.options
+                        span A
+                        input.select(type="radio" name="question3" value="A" required )
+                        span B
+                        input.select(type="radio" name="question3" value="B" required )
+                        span C
+                        input.select(type="radio" name="question3" value="C" required )
+                        span D
+                        input.select(type="radio" name="question3" value="D" required )
+                    span 4.
+                    div.options
+                        span A
+                        input.select(type="radio" name="question4" value="A" required )
+                        span B
+                        input.select(type="radio" name="question4" value="B" required )
+                        span C
+                        input.select(type="radio" name="question4" value="C" required )
+                        span D
+                        input.select(type="radio" name="question4" value="D" required )
+                    span 5.
+                    div.options
+                        span A
+                        input.select(type="radio" name="question5" value="A" required )
+                        span B
+                        input.select(type="radio" name="question5" value="B" required )
+                        span C
+                        input.select(type="radio" name="question5" value="C" required )
+                        span D
+                        input.select(type="radio" name="question5" value="D" required )
+                    span 6.
+                    div.options
+                        span A
+                        input.select(type="radio" name="question6" value="A" required )
+                        span B
+                        input.select(type="radio" name="question6" value="B" required )
+                        span C
+                        input.select(type="radio" name="question6" value="C" required )
+                        span D
+                        input.select(type="radio" name="question6" value="D" required )
+                    span 7.
+                    div.options
+                        span A
+                        input.select(type="radio" name="question7" value="A" required )
+                        span B
+                        input.select(type="radio" name="question7" value="B" required )
+                        span C
+                        input.select(type="radio" name="question7" value="C" required )
+                        span D
+                        input.select(type="radio" name="question7" value="D" required )
+                    span 8.
+                    div.options
+                        span A
+                        input.select(type="radio" name="question8" value="A" required )
+                        span B
+                        input.select(type="radio" name="question8" value="B" required )
+                        span C
+                        input.select(type="radio" name="question8" value="C" required )
+                        span D
+                        input.select(type="radio" name="question8" value="D" required )
+                    span 9.
+                    div.options
+                        span A
+                        input.select(type="radio" name="question9" value="A" required )
+                        span B
+                        input.select(type="radio" name="question9" value="B" required )
+                        span C
+                        input.select(type="radio" name="question9" value="C" required )
+                        span D
+                        input.select(type="radio" name="question9" value="D" required )
+                    span 10.
+                    div.options
+                        span A
+                        input.select(type="radio" name="question10" value="A" required )
+                        span B
+                        input.select(type="radio" name="question10" value="B" required )
+                        span C
+                        input.select(type="radio" name="question10" value="C" required )
+                        span D
+                        input.select(type="radio" name="question10" value="D" required )
+                div.Output
+                    button.btn.btn-success.graphExam(type='submit') submit
+

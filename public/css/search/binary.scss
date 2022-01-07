@@ -1,0 +1,35 @@
+@import '../modules/variables';
+@import '../modules/functions';
+@import '../modules/inputStyle';
+@import '../modules/info';
+
+body {
+    @include background();
+}
+.container {
+    @include flexCenter(column);
+}
+.find {
+    color: #fff;
+    font-size: 30px;
+}
+.steps {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+.steps {
+    color: #fff;
+    font-size: 20px;
+}
+.group {
+    flex-direction: column;
+}
+.leftright {
+    flex-direction: row;
+}
+.swal2-popup {
+    width: 60rem;
+}

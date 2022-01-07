@@ -1,0 +1,69 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/logSystem/modify.css' rel='stylesheet')
+
+block container
+    .container
+        .wrapper 
+            header  Modify
+            form(action="modify" method="post")
+                if message === "1"
+                    div.field.name.shake.error
+                        div.input-area 
+                            span.icon.fas.fa-user
+                            span name :&nbsp;
+                            input.section.field-name(type="text" value=`${name}` name="name")
+                            img.fieldIcon-name(src="https://img.icons8.com/ios/50/000000/create-new.png" alt="" srcset="")
+                            i.error.error-icon.fas.fa-exclamation-circle
+                        div.error.error-txt Name can't be blank!
+                    div.field.password.shake.error
+                        div.input-area 
+                            span.icon.fas.fa-lock
+                            span password :&nbsp;
+                            input.section.field-password(type="text" value=`${password}` name="password")
+                            img.fieldIcon-password(src="https://img.icons8.com/ios/50/000000/create-new.png" alt="" srcset="")
+                            i.error.error-icon.fas.fa-exclamation-circle
+                        div.error.error-txt Name can't be blank!
+                else if message === "6"
+                    div.field.name.shake.error
+                        div.input-area 
+                            span.icon.fas.fa-user
+                            span name :&nbsp;
+                            input.section.field-name(type="text" value=`${name}` name="name")
+                            img.fieldIcon-name(src="https://img.icons8.com/ios/50/000000/create-new.png" alt="" srcset="")
+                            i.error.error-icon.fas.fa-exclamation-circle
+                        div.error.error-txt User with the provided name already exists
+                    div.field.password
+                        div.input-area 
+                            span.icon.fas.fa-lock
+                            span password :&nbsp;
+                            input.section.field-password(type="text" value=`${password}` name="password")
+                            img.fieldIcon-password(src="https://img.icons8.com/ios/50/000000/create-new.png" alt="" srcset="")
+                            i.error.error-icon.fas.fa-exclamation-circle
+                        div.error.error-txt User with the provided email already exists
+                else 
+                    div.field.name
+                        div.input-area 
+                            span.icon.fas.fa-user
+                            span name :&nbsp;
+                            input.section.field-name(type="text" value=`${name}` name="name")
+                            img.fieldIcon-name(src="https://img.icons8.com/ios/50/000000/create-new.png" alt="" srcset="")
+                    div.field.password
+                        div.input-area 
+                            span.icon.fas.fa-lock
+                            span password :&nbsp;
+                            input.section.field-password(type="text" value=`${password}` name="password")
+                            img.fieldIcon-password(src="https://img.icons8.com/ios/50/000000/create-new.png" alt="" srcset="")
+                input.input.submit(type="submit" value ="修改")
+block javascript
+    script(src="../js/modify.js")
+
+
+
+
+
+
+
+
+
+

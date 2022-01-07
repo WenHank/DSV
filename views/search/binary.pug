@@ -1,0 +1,36 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/search/binary.css' rel='stylesheet')
+
+
+block container
+    .container
+        .find
+        div.circular
+        i.fas.fa-info-circle.tips
+        div.group
+            div.steps
+                p.step1 First, you need to sort
+                div.insert.method 
+                    p The searching value(
+                    p.searchValueshow    
+                    p ) is &nbsp;
+                    p.smallbig  
+                    p &nbsp;than median's value &nbsp;  
+                div.insert.method 
+                    p.left Go to left side &nbsp;
+                    p.right Go to right side 
+        .show
+        .index
+        div.methods
+            div.insert.method 
+                span Sort
+                button.btn.btn-success.sort(type='button') Go
+                span Search
+                input.input.searchValue(type="text" placeholder='value' maxlength="4")
+                button.btn.btn-success.searchGo(type='button') Go
+
+block javascript 
+    script(src='https://d3js.org/d3.v4.min.js')
+    script(src="/js/search/draw-binary.js") 
+    script(src="/js/search/search-binary.js") 

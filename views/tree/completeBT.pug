@@ -1,0 +1,29 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/trees/completeBT.css' rel='stylesheet')
+
+block container
+    section#intro
+        .container
+            .row
+                .col-md-12
+                    div.circular
+                    i.fas.fa-info-circle.tips
+                    div.methods
+                        div.traversal
+                            button.btn.btn-outline-danger.traversal.preOrder(type='button') Preorder
+                            button.btn.btn-outline-danger.traversal.inOrder(type='button') Inorder
+                            button.btn.btn-outline-danger.traversal.postOrder(type='button') Postorder
+                    canvas#canvas.completeBT.col-md-12(width="1600" height= "550")
+                    div.methods
+                        div.insert.method
+                            span Insert
+                            input.input.insert.insertValue(type="text" placeholder='value'  maxlength="3")
+                            button.btn.btn-success.insertGo(type='button') Go
+                        div.insert.method
+                            span Delete
+                            input.input.delete.deleteIndex(type="text" placeholder='Index'  maxlength="3") 
+                            button.btn.btn-success.deleteGo(type='button') Go
+
+block javascript 
+    script(src='/js/trees/completeBT.js')

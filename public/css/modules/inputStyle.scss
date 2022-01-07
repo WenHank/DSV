@@ -1,0 +1,25 @@
+.container {
+    height: 90vh;
+    @include flexCenter(row);
+    .methods {
+        @include flexCenter(column);
+    }
+    .method {
+        @include flexCenter(row);
+
+        span {
+            color: map_get($font, color);
+            font-family: map_get($font, family);
+            font-size: map-get($font, size);
+            margin: 10px;
+        }
+        .input {
+            width: 50px;
+            margin: 10px;
+        }
+        .btn {
+            margin: 2.5px;
+            font-family: 'Trebuchet MS';
+        }
+    }
+}

@@ -1,0 +1,98 @@
+html
+    head
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css' rel='stylesheet')
+        link(rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css' integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p' crossorigin='anonymous')    
+        script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js' integrity='sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT' crossorigin='anonymous')
+        script(src='//cdn.jsdelivr.net/npm/sweetalert2@11')
+        block stylesheets
+    body
+    header
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container-fluid
+                a.navbar-brand(href='/') D.S.V
+                button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                .collapse.navbar-collapse#navbarSupportedContent
+                    ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle#navbarDropdown(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false').
+
+                                Basics
+
+                            ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                                li
+                                a.dropdown-item(href='/basics/array') Array
+                                li
+                                a.dropdown-item(href='/basics/linkedList') Linked list
+                                hr.dropdown-divider
+                                li
+                                a.dropdown-item(href='/basics/stack') Stack
+                                li
+                                a.dropdown-item(href='/basics/queue') Queue
+                                li
+                                a.dropdown-item(href='/exam/basicsExam') Basics Exam
+
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle#navbarDropdown(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false').
+
+                                Tree
+
+                            ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                                li
+                                a.dropdown-item(href='/tree/completeBT') Complete Binary Tree
+                                li
+                                a.dropdown-item(href='/tree/BST') BST
+                                li
+                                a.dropdown-item(href='/exam/treeExam') Tree Exam
+
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle#navbarDropdown(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false').
+
+                                Graph
+
+                            ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                                li
+                                a.dropdown-item(href='/graph/graph') Graph
+                                li
+                                a.dropdown-item(href='/exam/graphExam') Graph Exam
+
+
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false').
+
+                                Search
+
+                            ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                                li
+                                a.dropdown-item(href='/search/Linear') Linear search
+                                li
+                                a.dropdown-item(href='/search/binary') Binary search
+                                li
+                                a.dropdown-item(href='/exam/searchExam') Search Exam
+
+                        li.nav-item
+                            a.nav-link(href='/about/about' role='button' aria-expanded='false').
+
+                                About
+                    form.d-flex
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false').
+                                <img src="https://img.icons8.com/ios-glyphs/30/000000/user--v1.png"/>
+
+                            ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                                if name 
+                                    li
+                                    a.dropdown-item.logSystem(href='/logSystem/user') User
+                                    li
+                                    a.dropdown-item.logSystem(href='/logSystem/modify') modify
+                                    li
+                                    a.dropdown-item.logSystem(href='/logout') logout
+                                else 
+                                    li
+                                    a.dropdown-item.logSystem(href='/logSystem/logIn') logIn
+                                    li
+                                    a.dropdown-item.logSystem(href='/logSystem/signUp') signUp
+
+        block container
+        block javascript

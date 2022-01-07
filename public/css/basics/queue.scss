@@ -1,0 +1,15 @@
+@import '../modules/variables';
+@import '../modules/functions';
+@import '../modules/inputStyle';
+@import '../modules/info';
+
+body {
+    @include background();
+}
+
+.queue {
+    margin-bottom: 50px;
+}
+.swal2-popup {
+    width: 40rem;
+}

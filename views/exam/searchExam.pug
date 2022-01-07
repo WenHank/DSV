@@ -1,0 +1,61 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/exam/searchExam.css' rel='stylesheet')
+
+
+block container
+    .container
+        form(action="searchExam" method="post") 
+            div.methods
+                div.Input
+                    span.title searchExam
+                    span 1. [53,72,23,48,3,67,13,84,32] use linear search to find 67,
+                    p how many steps do we need ?
+                    div.options
+                        input.select(type="radio" name="question1" value="A" required )
+                        span A. 4
+                        input.select(type="radio" name="question1" value="B" required )
+                        span B. 5
+                        input.select(type="radio" name="question1" value="C" required )
+                        span C. 6//
+                        input.select(type="radio" name="question1" value="D" required )
+                        span D. 7
+                    span 2. [23,37,58,61,72,79,85,91,100] use binary search to find 79,
+                    p how many steps do we need ?
+                    div.options
+                        input.select(type="radio" name="question2" value="A" required )
+                        span A. 1
+                        input.select(type="radio" name="question2" value="B" required )
+                        span B. 2
+                        input.select(type="radio" name="question2" value="C" required )
+                        span C. 3//
+                        input.select(type="radio" name="question2" value="D" required )
+                        span D. 4
+                    span 3. What is the value of u in the step 2 ?
+                    div.options
+                        input.select(type="radio" name="question3" value="A" required )
+                        span A. 2
+                        input.select(type="radio" name="question3" value="B" required )
+                        span B. 5
+                        input.select(type="radio" name="question3" value="C" required )
+                        span C. 6
+                        input.select(type="radio" name="question3" value="D" required )
+                        span D. 8//
+                    span 4.What is the value of l in the step 3 ?
+                    div.options
+                        input.select(type="radio" name="question4" value="A" required )
+                        span A. 5
+                        input.select(type="radio" name="question4" value="B" required )
+                        span B. 6//
+                        input.select(type="radio" name="question4" value="C" required )
+                        span C. 7
+                        input.select(type="radio" name="question4" value="D" required )
+                        span D. 8
+                    span 5. Is binary search better than linear search ?
+                    div.options
+                        input.select(type="radio" name="question5" value="A" required )
+                        span A. Yes//
+                        input.select(type="radio" name="question5" value="B" required )
+                        span B. No
+                    button.btn.btn-success.searchExamsubmit(type='submit') submit
+

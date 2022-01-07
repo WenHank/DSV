@@ -1,0 +1,23 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/graph/graph.css' rel='stylesheet')
+
+block container
+    section#intro
+        .container
+            .row
+                .col-md-12
+                    div.circular
+                    i.fas.fa-info-circle.tips
+                    div.types
+                            button.btn.btn-outline-info.types.direct(type='button') Direct
+                            button.btn.btn-outline-info.types.undirect(type='button') Undirect
+                    canvas#canvas.graph.col-md-12(width="1600" height= "550")
+                    div.methods
+                        div.method
+                            button.btn.btn-success.BFSGo(type='button') DFS
+                        div.method
+                            button.btn.btn-success.DFSGo(type='button') BFS
+
+block javascript 
+    script(src='/js/graph/graph.js')

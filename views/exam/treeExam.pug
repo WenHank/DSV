@@ -1,0 +1,71 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/exam/treeExam.css' rel='stylesheet')
+
+
+block container
+    .container
+        form(action="treeExam" method="post") 
+            div.methods
+                div.Input
+                    span.title treeExam
+                    span 1. Is this tree a binary search tree? 
+                    img.examImg(src="/img/tree1.png" alt="")
+                    div.options
+                        input.select(type="radio" name="question1" value="A" required )
+                        span A. Yes
+                        input.select(type="radio" name="question1" value="B" required )
+                        span B. No//
+                    span 2. Is this tree a complete binary tree?  
+                    img.examImg(src="/img/tree2.png" alt="")
+                    div.options
+                        input.select(type="radio" name="question2" value="A" required )
+                        span A. Yes//
+                        input.select(type="radio" name="question2" value="B" required )
+                        span B. No
+                    img.examImg(src="/img/tree3.png" alt="")
+                    span 3. Write this tree's Preorder
+                    div.options
+                        input.ansText(type="text" name="question3"  required )
+                    span 4. Write this tree's Inorder
+                    div.options
+                        input.ansText(type="text" name="question4"  required )
+                    span 5. Write this tree's Postorder
+                    div.options
+                        input.ansText(type="text" name="question5"  required )
+                    span 6. In this BST, how many steps to find 73?
+                    img.examImg(src="/img/tree4.png" alt="")
+                    div.options
+                        input.select(type="radio" name="question6" value="A" required )
+                        span A. 1
+                        input.select(type="radio" name="question6" value="B" required )
+                        span B. 2
+                        input.select(type="radio" name="question6" value="C" required )
+                        span C. 3//
+                        input.select(type="radio" name="question6" value="D" required )
+                        span D. 4
+                    span 7. In this BST, if we remove 85, insert 50, and insert 99
+                    p what is this tree's Preorder?
+                    div.options
+                        input.ansText(type="text" name="question7"  required )
+                    span 8. In this complete binary tree below, if we remove 41,
+                    img.examImg(src="/img/tree5.png" alt="")
+                    p what is this tree's Inorder?
+                    div.options
+                        input.ansText(type="text" name="question8"  required )
+                    span 9.Giving a BST, the Inorder's value will be a small to large sequences 
+                    div.options
+                        input.select(type="radio" name="question9" value="A" required )
+                        span A. Yes//
+                        input.select(type="radio" name="question9" value="B" required )
+                        span B. No
+                    span 10. In the binary search tree, 
+                    span whether its left and right subtrees are also binary search trees
+                    div.options
+                        input.select(type="radio" name="question10" value="A" required )
+                        span A. Yes//
+                        input.select(type="radio" name="question10" value="B" required )
+                        span B. No
+                div.Output
+                    button.btn.btn-success.treeExam(type='submit') submit
+

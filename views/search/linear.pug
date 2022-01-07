@@ -1,0 +1,24 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/search/linear.css' rel='stylesheet')
+
+
+block container
+    .container
+        div.circular
+        i.fas.fa-info-circle.tips
+        div.steps
+            p.step1 
+            p.step2
+        .show
+        .index
+        div.methods
+            div.insert.method
+                span Search
+                input.input.searchValue(type="text" placeholder='value' maxlength="4")
+                button.btn.btn-success.searchGo(type='button') Go
+
+block javascript 
+    script(src='https://d3js.org/d3.v4.min.js')
+    script(src='/js/search/draw-linear.js')
+    script(src='/js/search/search-linear.js')

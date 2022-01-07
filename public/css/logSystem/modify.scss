@@ -1,0 +1,128 @@
+@import '../modules/variables';
+@import '../modules/functions';
+@import '../modules/inputStyle';
+
+body {
+    @include background();
+}
+.container{
+    @include flexCenter(column);
+}
+.wrapper{
+    width: 300px;
+    background: #fff;
+    border-radius:5px;
+    padding: 40px 30px 50px 30px;
+}
+.wrapper header{
+    font-size: 35px;
+    font-weight: 600;
+}
+.wrapper form{
+    margin: 40px 0;
+}
+form .field{
+    width: 100%;
+    margin-bottom: 20px;
+}
+form .field.shake{
+    animation: shake 0.3s linear;
+}
+@keyframes shake{
+    0%{
+        margin-left: 0;
+    }
+    20%{
+        margin-left: -12px;
+    }
+    40%{
+        margin-left: 6px;
+    }
+    60%{
+        margin-left: 6px;
+    }
+    80%{
+        margin-left: -12px;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+form .field .input-area{
+    position: relative;
+}
+form input{
+    height: 50px;
+    width: 80%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    border-radius: .5rem;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+}
+form .field.error input{
+    border-color:#da3939;
+}
+form input::placeholder{
+    color: #bfbfbf;
+    font-size: 17px;
+}
+.field{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #bfbfbf;
+}
+form .field i{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+form .field .icon{
+    left: 15px;
+    color: #bfbfbf;
+    margin-right: 15px;
+}
+form .field .error-icon{
+    right: 15px;
+    color: #da3939;
+}
+form .field .error-txt{
+    margin-top: 5px;
+    color: #da3939;
+    text-align: left;
+}
+form .field .error{
+    display: none ;
+}
+form .field.error .error{
+    display: block;
+} 
+form input[type="submit"]{
+    margin-top: 30px;
+    border: none;
+    background: rgb(68, 68, 67);
+    color: #bfbfbf;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: rgb(88, 88, 87);
+}
+.message{
+    display: none;
+}
+.session{
+    margin-left: 15px;
+    color: #000000;
+}
+.field-name,.field-password{
+    border: none;
+    width: 80%;
+}
+.fieldIcon-name,.fieldIcon-password{
+    width: 20px;
+    cursor: pointer;
+}

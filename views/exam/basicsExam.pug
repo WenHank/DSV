@@ -1,0 +1,121 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/exam/basicsExam.css' rel='stylesheet')
+
+
+block container
+    .container
+        form(action="basicsExam" method="post") 
+            div.methods
+                div.Input
+                    span.title basicsExam
+                    span 1. Fill in the correct value according to the question
+                    p a[2] = 3; a[4] = 5; a[6] = a[5] + a[8];
+                    div.arrayContainer 
+                        span a1 
+                        span a2 
+                        span a3 
+                        span a4 
+                        span a5 
+                        span a6 
+                        span a7 
+                        span a8
+                    div.options.arrayQ
+                        span.arrayText 4
+                        input.arrayInput(type="text" name="question1array1" required ) 
+                        span.arrayText 5
+                        input.arrayInput(type="text" name="question1array2" required ) 
+                        span.arrayText 7
+                        input.arrayInput(type="text" name="question1array3" required ) 
+                        span.arrayText 9
+                        span.arrayText 1
+                    span 2. Fill in the correct value according to the question
+                    p b3 = 5; b5 = 8; b7 = b1 + b8;
+                    div.linkContainer 
+                        span b1 
+                        span b2 
+                        span b3 
+                        span b4 
+                        span b5 
+                        span b6 
+                        span b7 
+                        span b8
+                    div.options.linkQ
+                        span.linkText 4 ->
+                        span.linkText 5 ->
+                        input.linkInput(type="text" name="question2link1" required ) 
+                        span.linkText ->
+                        span.linkText 7 ->
+                        input.linkInput(type="text" name="question2link2" required ) 
+                        span.linkText ->
+                        span.linkText 9 ->
+                        input.linkInput(type="text" name="question2link3" required ) 
+                        span.linkText ->
+                        span.linkText 1 
+                    span 3. In a empty stack,do push(2) push(3) pop() push(5) pop()
+                    span What's left from top to bottom ?
+                    div.options
+                        input.ansText(type="text" name="question3" required ) 
+                    span 4. In a empty stack,do push(11) push(43) push(87) pop() push(25) pop()
+                    span What's left from top to bottom ?
+                    div.options
+                        input.ansText(type="text" name="question4" required ) 
+                    span 5. In this stack, after doing pop() pop() push(54) pop() push(27)
+                    span What is the second value from top to bottom?
+                    img.examImg(src="/img/stack1.png" alt="")
+                    div.options
+                        input.select(type="radio" name="question5" value="A" required )
+                        span A 23
+                        input.select(type="radio" name="question5" value="B" required )
+                        span B 45
+                        input.select(type="radio" name="question5" value="C" required )
+                        span C 54//
+                        input.select(type="radio" name="question5" value="D" required )
+                        span D 92
+                    span 6. In a empty queue,do enqueue(71) enqueue(67) dequeue() enqueue(87) enqueue(58) dequeue() 
+                    span What's left from top to bottom ?
+                    div.options
+                        input.ansText(type="text" name="question6" required ) 
+                    span 7. In a empty queue,do enqueue(45) enqueue(89) enqueue(13) dequeue() enqueue(38)  
+                    span What's left from top to bottom ?
+                    div.options
+                        input.ansText(type="text" name="question7" required ) 
+                    span 8. In this stack, after doing pop() push(34) pop() push(92) 
+                    span What is the second value from top to bottom?
+                    img.examImg(src="/img/stack2.png" alt="")
+                    div.options
+                        input.select(type="radio" name="question8" value="A" required )
+                        span A 34
+                        input.select(type="radio" name="question8" value="B" required )
+                        span B 43//
+                        input.select(type="radio" name="question8" value="C" required )
+                        span C 58
+                        input.select(type="radio" name="question8" value="D" required )
+                        span D 92
+                    span 9. In this queue, after doing dequeue() dequeue() enqueue(11) 
+                    span What is the third value from head to tail?
+                    img.examImg(src="/img/queue1.png" alt="")
+                    div.options
+                        input.select(type="radio" name="question9" value="A" required )
+                        span A 11
+                        input.select(type="radio" name="question9" value="B" required )
+                        span B 12
+                        input.select(type="radio" name="question9" value="C" required )
+                        span C 25//
+                        input.select(type="radio" name="question9" value="D" required )
+                        span D 47
+                    span 10. In this queue, after doing enqueue(60) dequeue() enqueue(11) 
+                    span What is the forth value from head to tail?
+                    img.examImg(src="/img/queue2.png" alt="")
+                    div.options
+                        input.select(type="radio" name="question10" value="A" required )
+                        span A 11
+                        input.select(type="radio" name="question10" value="B" required )
+                        span B 41
+                        input.select(type="radio" name="question10" value="C" required )
+                        span C 60
+                        input.select(type="radio" name="question10" value="D" required )
+                        span D 93//
+                div.Output
+                    button.btn.btn-success.basicsExamsubmit(type='submit') submit
+

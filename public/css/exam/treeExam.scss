@@ -1,0 +1,57 @@
+@import '../modules/variables';
+@import '../modules/functions';
+@import '../modules/inputStyle';
+
+body {
+    @include background();
+}
+.container{
+    @include flexCenter(column);
+}
+.title{
+    color: #fff;
+    font-family: "Trebuchet MS";
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    display: flex;
+}
+.Input{
+    color: #fff;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.methods{
+    margin-top: 1300px;
+}
+.Onput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.searchExamsubmit{
+    margin-top: 20px;
+}
+.select{
+    margin-left: 10px;
+    margin-right: 3px;
+}
+.options{
+    margin-bottom: 10px;
+}
+.ansText{
+    height: 30px;
+}
+.examImg{
+    margin-top: 20px;
+    width: 300px;
+    height: 160px;
+}
+.options{
+    margin-bottom: 30px;
+}

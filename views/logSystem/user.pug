@@ -1,0 +1,46 @@
+extends ../layout 
+block stylesheets 
+    link(href='/css/logSystem/user.css' rel='stylesheet')
+
+block container
+    .container
+        .wrapper 
+            header  User
+                div.field.name
+                    div.input-area 
+                        span.icon.fas.fa-user
+                        span name :&nbsp;
+                        span.session #{name}
+                div.field.email
+                    div.input-area 
+                        span.icon.fas.fa-envelope
+                        span email :&nbsp;
+                        span.session #{email}
+            header  Exam
+                div.field.basics
+                    div.input-area 
+                        span basics exam grade :&nbsp;
+                        span.session #{basicsGrade} &nbsp;&nbsp;
+                        p.errorAns wrong answers in basics exams :&nbsp;
+                        span.session #{basicserrorAns}
+                div.field.tree
+                    div.input-area 
+                        span tree exam grade :&nbsp;
+                        span.session #{treeGrade} &nbsp;&nbsp;
+                        p.errorAns wrong answers in tree exams :&nbsp;
+                        span.session #{treeerrorAns}
+                div.field.seaech
+                    div.input-area 
+                        span search grade :&nbsp;
+                        span.session #{searchGrade} &nbsp;&nbsp;
+                        p.errorAns wrong answers in search exams :&nbsp;
+                        span.session #{searcherrorAns}
+
+
+
+
+
+
+
+
+

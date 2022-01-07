@@ -1,0 +1,12 @@
+@import '../modules/variables.scss';
+@import '../modules/functions.scss';
+@import '../modules/inputStyle.scss';
+@import '../modules/info.scss';
+
+body {
+    @include background();
+}
+
+.array {
+    margin-bottom: 10px;
+}
