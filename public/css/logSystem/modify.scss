@@ -87,7 +87,8 @@ form .field .icon{
     margin-right: 15px;
 }
 form .field .error-icon{
-    right: 15px;
+    right: 50px;
+    margin-top: 13px;
     color: #da3939;
 }
 form .field .error-txt{
@@ -119,10 +120,14 @@ input[type="submit"]:hover{
     color: #000000;
 }
 .field-name,.field-password{
-    border: none;
     width: 80%;
+    border: none;
 }
 .fieldIcon-name,.fieldIcon-password{
     width: 20px;
     cursor: pointer;
+    margin-left: 15px;
+}
+.modify{
+    border: 1px solid black;
 }
